@@ -44,7 +44,7 @@ class UserCallable extends FuncCallable {
       let environment = new Environment(closure);
       
       for (let i = 0; i < decl.params.length; i++) {
-        environment.define(decl.params[i].line, decl.params[i].value, args[i], "final");
+        environment.define(decl.params[i].line, decl.params[i].value, args[i], "var");
       }
 
       try {

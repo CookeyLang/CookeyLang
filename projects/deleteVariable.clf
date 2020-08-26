@@ -1,0 +1,3 @@
+var g = 10;
+deletevariable g;
+printLine(@"NaV":g); %% NaV

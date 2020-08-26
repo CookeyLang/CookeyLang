@@ -1,3 +1,4 @@
-dev/ # Developer notes
-README/ # These are outdated
-files/ # Examples and tests
+dev/
+README/
+files/
+node_modules/

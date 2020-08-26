@@ -4,7 +4,8 @@
   "description": "A dynamic, interpreted langauge.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test",
+    "cookeylang": "node cli"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "Interpreted"
   ],
   "author": "Coder100, JDOG787, CodingCactus, Codemonkey51, RaidTheWeb, TheSummit3145",
-  "license": "MIT",
+  "license": "CC BY-NC-SA 4.0",
   "bugs": {
     "url": "https://github.com/CookeyLang/CookeyLang/issues"
   },
