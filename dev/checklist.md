@@ -1,0 +1,13 @@
+Add (done) for done things
+- Planning `(done)`
+- Lexer `(done)`
+  - Comments `(done)`
+  - +, -, *, / (those are simple things) `(done)`
+  - Simple things like ==, <=, >=, !=, +, -, /, * `(done)`
+  - += -= *= /= `(done)`
+  - Reserved keywords `(done)`
+- Parser (near done)
+- Interpreter (near done)
+- Prototypes aka classes
+- Fix some scope bug
+- ~~Win the jam~~

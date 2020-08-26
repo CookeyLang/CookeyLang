@@ -1,0 +1,14 @@
+do {
+  printLine("I
+  happen
+  once.");
+} while (false);
+
+printLine("
+
+");
+
+do {
+  printLine("I happen once again!");
+  break;
+} while (true);

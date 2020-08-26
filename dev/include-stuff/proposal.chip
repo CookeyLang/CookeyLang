@@ -1,0 +1,3 @@
+name=your project name;
+author=author name;
+dependancies= stdlib, somethingelselib;

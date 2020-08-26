@@ -1,0 +1,31 @@
+%*
+printLine(1.2334 + 1.2334);
+printLine("Hello, world!");
+print("edge
+case
+detection ");
+printLine("你好");
+printLine('\e[93mCOLORED TEXT\e[0m'); printLine('test');
+printLine('Look! \u{2192}');
+printLine('\u{x}');
+*%
+printLine("\m199");
+printLine('test' + %*test*% '2');
+printLine("\u{001B}[93mColored text\e[0m");
+
+
+
+printLine('lol' %* test *% );
+
+function test(lol, oof) {
+  ret 'good';
+}
+
+class test {
+  %% it sees ret, and that is KEYWORD not identifier
+  ret('test')%*urn()*%;urn() { 
+    'hai';
+  }
+}
+printLine(test());
+printLine(test());

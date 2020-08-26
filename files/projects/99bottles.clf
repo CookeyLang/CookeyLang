@@ -1,0 +1,22 @@
+function bottle(num) {
+  ret num + " of bottles of beer on a wall, " + num + " of bottles of beer on a wall.";
+}
+
+function takeOneDown(num) {
+  ret "Take one down, pass it around, " + num + " bottles of beer on the wall.";
+}
+
+var bottles = 100;
+
+function init(bottles) {
+  if (bottles > 0) {
+    printLine(bottle(bottles));
+    bottles --;
+    printLine(takeOneDown(bottles));
+    init(bottles);
+  } el {
+    printLine("No more bottles!");
+  }
+}
+
+init(bottles);

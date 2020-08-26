@@ -1,0 +1,2 @@
+Error: [error here] on <x, y> in <file> # this is a parser thing
+SyntaxError: [error here] on <x, y> in <file> # this is a lexer thing

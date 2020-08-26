@@ -1,0 +1,1 @@
+printLine("\e[38;2;184;134;28mCookeylang is the best!\e[0m");

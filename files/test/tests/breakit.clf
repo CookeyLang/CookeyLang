@@ -1,0 +1,11 @@
+class test {
+  %% it sees ret, and that is KEYWORD not identifier
+  foo() {
+    ret('buz');
+  }; %% no semis smh
+  %*test*%
+  buz() { 
+    ret 'foo';
+  };
+}
+printLine(test());

@@ -1,0 +1,15 @@
+function makeCounter() {
+  var i = 0;
+  function count() {
+    i++;
+    printLine(i);
+  }
+
+  ret count;
+}
+
+var counter = makeCounter();
+counter();
+counter();
+counter();
+counter();

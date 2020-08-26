@@ -1,0 +1,76 @@
+%% COMMENT
+%*
+  MULTI COMMENT
+*%
+
+%% Variables
+var x = 10; %% normal
+final const = 10; %% constants yes
+var array = [1, 2, 3, 4]; %% HAHA ok
+var not; %% this will be No by default
+
+
+%% Functions
+function functioname (args) {
+  %% whatever
+  %% retrurn
+  ret args;
+}
+
+
+number <- x; %% conversions
+boolean <- x; %% basically in python this is like x = str(x)
+string <- x;
+
+
+
+%% call function
+var result = functioname(2);
+
+%% natives
+print ("test");
+var out = input ("what your name is?");
+
+
+%% Operating Symbols
+%% Addtion +
+%% Subtraction -
+%% Multiply *
+%% Divide /
+%% <- conversion operator
+%% No (your friendly null)
+%% ^ power
+%% % modulo
+%% 
+
+
+%% compare is < and > open is {  and }
+var g = 5;
+if (g < 5) {
+  %% EPICCCCC
+  %% USING THIS
+  print("g < 5");
+} elif (g > 5) {
+  print ("g > 5");
+} else { %% looks weird otherwise
+  print ("g == 5");
+}
+
+foreach (var name of array) {
+  %% do something
+  %% lets make it foreach so its EASY
+  %% ok
+  print(name);
+}
+
+%% no no so basically foreach is for looping through arrray
+for [i, 0, array.length, 1] {
+  let item = array[i];
+  print(item);
+}
+
+while (true) {
+  %% idk
+  break;
+}
+

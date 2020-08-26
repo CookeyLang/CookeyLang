@@ -1,0 +1,3 @@
+final g = 2;
+final output = g == 1 or g == 2 ? 1 : 2;
+exit output;

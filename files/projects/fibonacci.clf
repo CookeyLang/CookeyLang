@@ -1,0 +1,9 @@
+function fibonacci(num) {
+  if (num <= 1) ret 1;
+
+  ret fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+for (var i = 0; i < 20; i ++) {
+  printLine(fibonacci(i));
+}

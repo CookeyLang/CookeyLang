@@ -1,0 +1,4 @@
+final g = 5;
+exit g;
+g = 6;
+exit g;

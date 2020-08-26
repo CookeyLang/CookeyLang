@@ -1,0 +1,26 @@
+{
+  "name": "cookeylang",
+  "version": "1.0.0",
+  "description": "A dynamic, interpreted langauge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CookeyLang/CookeyLang.git"
+  },
+  "keywords": [
+    "CookeyLang",
+    "Cookey",
+    "Language",
+    "Dynamic",
+    "Interpreted"
+  ],
+  "author": "Coder100, JDOG787, CodingCactus, Codemonkey51, RaidTheWeb, TheSummit3145",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CookeyLang/CookeyLang/issues"
+  },
+  "homepage": "https://github.com/CookeyLang/CookeyLang#readme"
+}

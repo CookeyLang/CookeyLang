@@ -1,0 +1,5 @@
+var test = 1;
+while(test == 1) {
+  printLine("test");
+  test = 0;
+}
