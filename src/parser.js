@@ -17,11 +17,6 @@ function parser(tokens) {
     return tokens[index];
   }
 
-  /* function advance() {
-    index++;
-    return tokens[index];
-  } */
-
   function match(...types) {
     for (const type of types) {
       if (check(type)) {

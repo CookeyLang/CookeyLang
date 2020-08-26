@@ -11,7 +11,7 @@ function resolver(trees) {
     construct: false,
     clss: false,
     superClass: false
-  }; // function, loop, construct, class
+  };
 
   function resolveBlock(statements) {
     // Check each statement
