@@ -1,4 +1,4 @@
-dev
-README
-files
-node_modules
+dev/
+README/
+files/test/
+node_modules/
