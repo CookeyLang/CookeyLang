@@ -1,7 +1,0 @@
-var g = 10;
-g ++;
-exit g;
-g *= 2;
-exit g;
-g ^= 3;
-exit g;

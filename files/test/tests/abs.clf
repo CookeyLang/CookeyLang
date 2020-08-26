@@ -1,3 +1,0 @@
-printLine(|-1|);
-printLine(|-1 - 2 - 3|);
-printLine(|@'number':'-03'|);

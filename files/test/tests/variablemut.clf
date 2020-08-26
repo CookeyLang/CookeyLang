@@ -1,7 +1,0 @@
-final g = 2;
-{
-  exit g;
-  final g = 10;
-  exit g;
-}
-exit g;

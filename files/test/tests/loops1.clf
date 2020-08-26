@@ -1,4 +1,0 @@
-var g = 0;
-while((g++) < 2) {
-  printLine(g);
-}

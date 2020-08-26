@@ -1,5 +1,0 @@
-for (var i = 0; i < 10; i ++) {
-  do {
-    printLine("Hi, this is the " + @"string":i + (i == 1 ? "st" : i == 2 ? "nd" : i == 3 ? "rd" : "th") + " time!");
-  } while (false);
-}

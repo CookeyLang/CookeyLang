@@ -1,5 +1,0 @@
-var g = 10;
-printLine(g);
-
-deletevariable g;
-printLine(@"NaV":g);

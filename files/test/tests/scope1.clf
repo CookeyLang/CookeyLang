@@ -1,9 +1,0 @@
-var a = "global";
-
-function hi(name) {
-  ret "hi " + name + "!";
-}
-
-{
-  printLine(hi("world"));
-}

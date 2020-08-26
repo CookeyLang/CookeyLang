@@ -1,6 +1,0 @@
-final bool = true;
-if (bool) {
-  exit "nice";
-} el {
-  exit "NOOO";
-}

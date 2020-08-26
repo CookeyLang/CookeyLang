@@ -1,6 +1,0 @@
-include will search $COOKEYPATH first if not there it will check the local folder
-if $COOKEYPATH isnt set it will set it to the default place in the install folder
-
-each lib will be a folder with the name the name of the package with main.clf (or .js read farther in) inside and meta.json to hold metadata it will include type (js or clf) an other atributes
-
-

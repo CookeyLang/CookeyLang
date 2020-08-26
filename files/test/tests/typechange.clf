@@ -1,7 +1,0 @@
-printLine(1 + 2 + @"string":3);
-if (@"string":@"boolean":1 == "true") {
-  printLine("Hooray!");
-}
-
-var addition = lambda (a, b): a + b;
-printLine(@"string":addition(2, 3));

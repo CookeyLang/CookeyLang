@@ -1,7 +1,0 @@
-{
-    "type":"clf",
-    "main":"main.clf",
-    "publisher":"example author",
-    "experimental":false,
-    "dependancies":["stdlib"]
-}
