@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node test",
-    "cookeylang": "node cli"
+    "start": "node cli",
+    "cookeylang": "node cli",
+    "postinstall": "node welcome"
   },
   "repository": {
     "type": "git",
