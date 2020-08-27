@@ -13,6 +13,9 @@ It is in active development on repl.it by our team.
 ```sh
 npx cookeylang [file]
 ```
+```sh
+npx welcome
+```
 
 ## Node
 ```js

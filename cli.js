@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const params = process.argv;
 
 function error(message, code=1) {
