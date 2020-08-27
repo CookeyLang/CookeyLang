@@ -393,7 +393,7 @@ function parser(tokens) {
 
     if (match("EQ", "PLUS_EQ", "MINUS_EQ", "DIVIDE_EQ", "TIMES_EQ", "POWER_EQ", "MODULO_EQ")) {
       let equals = previous();
-      let value = assignment();
+      let value = expression();
 
       if (expr.type == "variable") {
         let name = expr.name;

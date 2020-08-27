@@ -34,7 +34,7 @@ class LambdaFunc extends FuncCallable {
       }
 
       return interpretStmt(decl.retVal, environment);
-    }, () => `<function ${decl.name.value}>`);
+    }, () => `<lambda function>`);
   }
 }
 

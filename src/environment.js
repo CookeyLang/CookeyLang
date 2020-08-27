@@ -35,7 +35,7 @@ class Environment {
 
   getMut(name) {
     if (this.values[name] !== undefined) return this.values[name].mut;
-    if (this.previous != null) return this.previous.getMut(name);
+    // We do not need to get the mutability of the outer variable because we know it will be var.
     return "var";
   }
 

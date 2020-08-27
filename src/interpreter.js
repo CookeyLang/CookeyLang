@@ -335,7 +335,7 @@ function interpreter(trees, penvironment=null) {
           delete environment.values[expr.variable.value];
           return;
         }
-        if (environment.previous && environment.previous.values[expr.variable.value] !== undefined) delete environment.previous.values[expr.variable.value] 
+        // Deleteing variables should not change the outer scope
         break;
       
       case "postfix": {
