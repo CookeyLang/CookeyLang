@@ -11,9 +11,9 @@ function error(message, code=1) {
  * TODO: Trim arguments.
  */
 if (params.length == 2) {
-  error("Expected a file name, e.g. \x1b[0mnpx cookeylang index.clf");
+  error("\x1b[91mExpected a file name, e.g. \x1b[0mnpx cookeylang index.clf");
 } else if (params.length == 3) {
   require("./index").interpretFile(params[2])
 } else {
-  error("Expected only one file name, e.g. \x1b[0mnpx cookeylang index.clf");
+  error("\x1b[91mExpected only one file name, e.g. \x1b[0mnpx cookeylang index.clf");
 }
