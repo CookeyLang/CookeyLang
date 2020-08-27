@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/CookeyLang/CookeyLang.git"
   },
+  "bin": "cli.js",
   "keywords": [
     "CookeyLang",
     "Cookey",
