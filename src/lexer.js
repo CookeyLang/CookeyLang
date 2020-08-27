@@ -2,7 +2,7 @@ const error = require("./error");
 
 let reserved = ([
   // Variables
-  "var", "final", "deletevariable",
+  "var", "final", "deleteVariable",
 
   // Functions
   "function", "ret", "exit", "lambda",

@@ -489,16 +489,27 @@ function parser(tokens) {
   }
 
   function power() {
-    let expr = type_change();
+    let expr = unary();
 
     while (match("POWER")) {
       let line = previous().line;
       let operator = previous().value;
-      let right = type_change();
+      let right = unary();
       expr = { line, type: "binary", left: expr, operator, right };
     }
 
     return expr;
+  }
+
+  function unary() {
+    if (match("BANG", "MINUS")) {
+      let line = previous().line;
+      let operator = previous().value;
+      let right = unary();
+      return { line, type: "unary", operator, right };
+    }
+
+    return type_change();
   }
 
   function type_change() {
@@ -510,17 +521,6 @@ function parser(tokens) {
 
       let expr = type_change();
       return { type: "typechange", line, newtype, expr };
-    }
-
-    return unary();
-  }
-
-  function unary() {
-    if (match("BANG", "MINUS")) {
-      let line = previous().line;
-      let operator = previous().value;
-      let right = unary();
-      return { line, type: "unary", operator, right };
     }
 
     return call();

@@ -62,12 +62,12 @@ comparison => addition ( ( ">" | ">=" | "<" | "<=" ) addition )*
 # Math
 addition => multiplication ( ( "-" | "+" ) multiplication )*
 multiplication => power ( ( "/" | "*" | "%" ) power )*
-power => type_change ( "^" type_change )*
+power => unary ( "^" unary )*
 
 
 # Unary
-type_change => ( "@" STRING ":" type_change ) | unary
-unary => ( "!" | "-" ) unary | call
+unary => ( ( "!" | "-" ) unary ) | type_change
+type_change => ( "@" STRING ":" type_change )? call
 
 
 # Functions
