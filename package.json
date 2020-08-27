@@ -14,8 +14,8 @@
     "url": "git+https://github.com/CookeyLang/CookeyLang.git"
   },
   "bin": {
-    "cookeylang": "node cli",
-    "welcome": "node welcome"
+    "cookeylang": "node ./cli.js",
+    "welcome": "node ./welcome.js"
   },
   "keywords": [
     "CookeyLang",
