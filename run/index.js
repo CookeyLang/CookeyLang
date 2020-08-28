@@ -9,7 +9,7 @@ const interpreter = require("../src/interpreter");
  */
 function interpretFile(file) {
   if (!fs.existsSync(file)) {
-    console.log(`Error: \x1b[0m\x1b[1mFile does not exist\x1b[0m`);
+    console.log(`\x1b[91mError: \x1b[0m\x1b[1mFile does not exist\x1b[0m`);
     return "NaV";
   }
   let code = fs.readFileSync(file, "utf-8");
