@@ -1,6 +1,6 @@
 {
   "name": "cookeylang",
-  "version": "2.1.9",
+  "version": "2.2.0",
   "description": "A dynamic, interpreted langauge.",
   "main": "run/index.js",
   "scripts": {
