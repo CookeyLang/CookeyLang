@@ -80,8 +80,10 @@ class NativeCallable extends FuncCallable {
         environment.define(0, params[i], args[i], "final");
       }
 
-      let data = call(args);
-      if (isConstruct) return this.instance;
+      environment.define(0, "this", this.instance, "final")
+
+      let data = call(args, environment);
+      if (isConstruct) return environment.getVal(0, "this")
       else return data;
     }, () => `<function ${decl.name.value}>`);
     this.closure = closure;
