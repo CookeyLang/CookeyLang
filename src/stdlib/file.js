@@ -3,7 +3,6 @@ const { NativeCallable } = require("../functions");
 const Environment = require("../environment");
 
 const fs = require("fs");
-// const error = require("../error");
 
 let nativeclss = new ClassCallable("File", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),

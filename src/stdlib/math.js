@@ -4,7 +4,7 @@ const Environment = require("../environment");
 
 let nativeclss = new ClassCallable("Math", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),
-  
+
   "sin": new NativeCallable(1, ["ang"], new Environment(), args => {
     return Math.sin(args[0]);
   }, false),
@@ -41,6 +41,18 @@ let nativeclss = new ClassCallable("Math", {
     return Math.pow(args[0], args[1]);
   }, false),
 
+  "log": new NativeCallable(2, ["num"], new Environment(), args => {
+    return Math.log10(args[0])
+  }, false),
+
+  "ln": new NativeCallable(2, ["num"], new Environment(), args => {
+    return Math.log(args[0]);
+  }, false),
+
+  "logn": new NativeCallable(2, ["num", "base"], new Environment(), args => {
+    return Math.log(args[0]) / Math.log(args[1])
+  }, false),
+
   "sqrt": new NativeCallable(1, ["num"], new Environment(), args => {
     return Math.sqrt(args[0]);
   }, false),
@@ -61,6 +73,32 @@ let nativeclss = new ClassCallable("Math", {
   "ceil": new NativeCallable(1, ["num"], new Environment(), args => {
     return Math.ceil(args[0]);
   }, false),
+
+  "sign": new NativeCallable(1, ["num"], new Environment(), args => {
+    return Math.sign(args[0]);
+  }, false),
+
+  "factorial": new NativeCallable(1, ["num"], new Environment(), args => {
+    args[0] = parseInt(args[0]);
+    if (args[0] < 0) return null;
+
+    let prev = [];
+    function factorial(num) {
+      if (num == 0 || num == 1) return 1;
+      if (prev[num] > 0) return prev[num];
+      return prev[num] = factorial(num - 1) * num;
+    }
+
+    return factorial(args[0])
+  }, false),
+
+  "random": new NativeCallable(1, [], new Environment(), () => {
+    return Math.random();
+  }, false),
+
+  "randomRange": new NativeCallable(1, ["min", "max"], new Environment(), args => {
+    return Math.random() * (args[1] - args[0]) + args[0];
+  }, false)
 }, null, null);
 
 let lib = nativeclss.call([]);
