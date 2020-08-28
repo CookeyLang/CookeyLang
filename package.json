@@ -2,20 +2,20 @@
   "name": "cookeylang",
   "version": "2.1.6",
   "description": "A dynamic, interpreted langauge.",
-  "main": "index.js",
+  "main": "run/index.js",
   "scripts": {
-    "test": "node test",
-    "start": "node cli",
-    "cookeylang": "node cli",
-    "postinstall": "node welcome"
+    "test": "node run/test",
+    "start": "node run/cli",
+    "cookeylang": "node run/cli",
+    "postinstall": "node run/welcome"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CookeyLang/CookeyLang.git"
   },
   "bin": {
-    "cookeylang": "./cli.js",
-    "welcome": "./welcome.js"
+    "cookeylang": "run/cli.js",
+    "welcome": "run/welcome.js"
   },
   "keywords": [
     "CookeyLang",
@@ -25,7 +25,7 @@
     "Interpreted"
   ],
   "author": "Coder100, JDOG787, CodingCactus, Codemonkey51, RaidTheWeb, TheSummit3145",
-  "license": "CC BY-NC-SA 4.0",
+  "license": "CC-BY-NC-SA-4.0",
   "bugs": {
     "url": "https://github.com/CookeyLang/CookeyLang/issues"
   },

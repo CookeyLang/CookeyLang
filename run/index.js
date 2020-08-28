@@ -1,7 +1,7 @@
 const fs = require("fs");
-const lexer = require("./src/lexer");
-const parser = require("./src/parser");
-const interpreter = require("./src/interpreter");
+const lexer = require("../src/lexer");
+const parser = require("../src/parser");
+const interpreter = require("../src/interpreter");
 
 /**
  * @param file {string} The text.
