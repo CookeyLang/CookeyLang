@@ -29,3 +29,29 @@ interpretText(`printLine("Hello, world!");`);
 
 # Learn
 Currently, use the [official website](https://cookeylangteam.repl.co) to learn cookeylang.
+
+# Tests
+For testing (benchmarks), use
+```
+npm run test
+```
+
+# Contributing
+First, fork this repository.
+```sh
+git clone https://github.com/[user]/[name].git
+```
+To test out your fork:
+```sh
+npm test
+```
+To run it:
+```sh
+npm start
+```
+Commit:
+```sh
+git commit -m "[what you did]"
+git push -u origin master
+```
+When you are ready, submit a pull request.
