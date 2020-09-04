@@ -41,11 +41,11 @@ First, fork this repository.
 ```sh
 git clone https://github.com/[user]/[name].git
 ```
-To test out your fork:
+To test out your fork (usually benchmarks):
 ```sh
 npm test
 ```
-To run it:
+To run your fork:
 ```sh
 npm start
 ```
