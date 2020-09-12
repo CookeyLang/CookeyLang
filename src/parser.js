@@ -1,10 +1,5 @@
 const error = require("./error");
 
-/**
- * @interface tokens {
- *  name: string
- * }
- */
 function parser(tokens) {
   let index = 0;
 
