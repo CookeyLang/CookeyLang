@@ -48,6 +48,12 @@ function lexer(code) {
   function addToken(name, value = name) { tokens.push({ name, value, line }) }
 
   for (; index < code.length; index++) {
+    if (index == 0 && code[index] == "#") {
+      while (code[index] != '\n') {
+        index ++;
+      }
+    }
+
     if (isNumber(code[index])) {
       let number = code[index];
       while (isNumber(code[index + 1]) && index < code.length) {
