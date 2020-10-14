@@ -100,7 +100,7 @@ let nativeclss = new ClassCallable("Math", {
     return Math.random() * (args[1] - args[0]) + args[0];
   }, false),
 
-  "nPr": new NativeCallable(2, ["n", "r"], new Environment(), (args) => {
+  "nPr": new NativeCallable(2, ["n", "r"], new Environment(), args => {
     let n = parseInt(args[0]);
     let r = parseInt(args[1]);
 
@@ -121,7 +121,7 @@ let nativeclss = new ClassCallable("Math", {
     return fact(n) / fact(n - r);
   }, false),
 
-  "nCr": new NativeCallable(2, ["n", "r"], new Environment(), (args) => {
+  "nCr": new NativeCallable(2, ["n", "r"], new Environment(), args => {
     let n = parseInt(args[0]);
     let r = parseInt(args[1]);
 
