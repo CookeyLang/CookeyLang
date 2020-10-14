@@ -14,8 +14,8 @@
     "url": "git+https://github.com/CookeyLang/CookeyLang.git"
   },
   "bin": {
-    "cookeylang": "run/cli.js",
-    "welcome": "run/welcome.js"
+    "cookeylang": "run/cli",
+    "welcome": "run/welcome"
   },
   "keywords": [
     "CookeyLang",
