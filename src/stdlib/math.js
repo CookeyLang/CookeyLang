@@ -98,7 +98,49 @@ let nativeclss = new ClassCallable("Math", {
 
   "randomRange": new NativeCallable(1, ["min", "max"], new Environment(), args => {
     return Math.random() * (args[1] - args[0]) + args[0];
-  }, false)
+  }, false),
+
+  "nPr": new NativeCallable(2, ["n", "r"], new Environment(), args => {
+    let n = parseInt(args[0]);
+    let r = parseInt(args[1]);
+
+    if (n < r) return 0;
+
+    function fact(v) {
+      if (v <= 0) return 1;
+      let output = v;
+
+      while (v > 1) {
+        v--;
+        output *= v;
+      }
+
+      return output;
+    }
+
+    return fact(n) / fact(n - r);
+  }, false),
+
+  "nCr": new NativeCallable(2, ["n", "r"], new Environment(), args => {
+    let n = parseInt(args[0]);
+    let r = parseInt(args[1]);
+
+    if (n < r) return 0;
+
+    function fact(v) {
+      if (v <= 0) return 1;
+      let output = v;
+
+      while (v > 1) {
+        v--;
+        output *= v;
+      }
+
+      return output;
+    }
+
+    return fact(n) / (fact(r) * fact(n - r));
+  }, false),
 }, null, null);
 
 let lib = nativeclss.call([]);
