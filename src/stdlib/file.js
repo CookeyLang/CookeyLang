@@ -17,16 +17,16 @@ let nativeclss = new ClassCallable("File", {
 
   "readFile": new NativeCallable(1, ["file"], new Environment(), args => {
     if(!fs.existsSync(args[0])) return false;
-    return fs.readFileSync(args[0]);
+    return fs.readFileSync(args[0], 'utf-8');
   }, false),
 
-  "unlink": new NativeCallable(1, ["file"], new Environment(), args => {
+  "unlinkFile": new NativeCallable(1, ["file"], new Environment(), args => {
     if(!fs.existsSync(args[0])) return false;
     fs.unlinkSync(args[0]);
     return true;
   }, false),
 
-  "delete": new NativeCallable(1, ["file"], new Environment(), args => {
+  "deleteFile": new NativeCallable(1, ["file"], new Environment(), args => {
     if(!fs.existsSync(args[0])) return false;
     fs.unlinkSync(args[0]);
     return true
@@ -44,7 +44,7 @@ let nativeclss = new ClassCallable("File", {
     return true;
   }, false),
 
-  "exists": new NativeCallable(1, ["file"], new Environment(), args => fs.existsSync(args[0]), false),
+  "fileExists": new NativeCallable(1, ["file"], new Environment(), args => fs.existsSync(args[0]), false),
 }, null, null);
 
 let lib = nativeclss.call([]);
