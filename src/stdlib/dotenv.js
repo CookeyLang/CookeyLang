@@ -4,7 +4,7 @@ const Environment = require("../environment");
 
 const fs = require("fs");
 
-let nativeclss = new ClassCallable("File", {
+let nativeclss = new ClassCallable("Dotenv", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),
   
   "get": new NativeCallable(1, ["item"], new Environment(), args => {
