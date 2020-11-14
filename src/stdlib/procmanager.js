@@ -13,8 +13,5 @@ let nativeclss = new ClassCallable("Procmanager", {
 }, null, null);
 
 let lib = nativeclss.call([]);
-Object.keys(process.env).forEach(item => {
-    lib.setVal({ value: item }, process.env[item]);
-})
 
 module.exports = { lib, name: "Procmanager" };
