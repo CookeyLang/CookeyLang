@@ -2,8 +2,6 @@ const { ClassCallable } = require("../classes");
 const { NativeCallable } = require("../functions");
 const Environment = require("../environment");
 
-const fs = require("fs");
-
 let nativeclss = new ClassCallable("Dotenv", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),
   
