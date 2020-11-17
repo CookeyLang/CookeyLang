@@ -11,8 +11,9 @@ let nativeclss = new ClassCallable("Dotenv", {
 }, null, null);
 
 let lib = nativeclss.call([]);
+
 Object.keys(process.env).forEach(item => {
-    lib.setVal({ value: item }, process.env[item]);
+  lib.setVal({ value: item }, process.env[item]);
 })
 
 module.exports = { lib, name: "Dotenv" };

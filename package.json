@@ -1,7 +1,7 @@
 {
   "name": "cookeylang",
   "version": "3.0.0-beta",
-  "description": "A dynamic, interpreted langauge.",
+  "description": "A dynamic, interpreted language.",
   "main": "run/index.js",
   "scripts": {
     "test": "node run/test",

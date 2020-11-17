@@ -4,7 +4,7 @@ const Environment = require("../environment");
 
 const { spawnSync, execSync } = require("child_process");
 
-let nativeclss = new ClassCallable("ProcManager", {
+let nativeclss = new ClassCallable("Process", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),
   
   "spawn": new NativeCallable(1, ["cmd"], new Environment(), args => {
@@ -18,4 +18,4 @@ let nativeclss = new ClassCallable("ProcManager", {
 
 let lib = nativeclss.call([]);
 
-module.exports = { lib, name: "ProcManager" };
+module.exports = { lib, name: "Process" };
