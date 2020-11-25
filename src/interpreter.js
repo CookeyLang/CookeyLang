@@ -10,7 +10,7 @@ const resolver = require("./resolver");
 const include = require('./include');
 
 function interpreter(trees, penvironment=null) {
-  var environment = new Environment();
+  let environment = new Environment();
   environment.define(0, "printLine", new FuncCallable(1, args => {
     console.log(stringify(args[0]))
   }, () => "<Native Function>"), "final");
@@ -206,7 +206,7 @@ function interpreter(trees, penvironment=null) {
               let max = interpret(expr.params[0]);
               checkType(expr.line, "Expected repetition count as number.", max, "number");
 
-              var i = 0;
+              let i = 0;
               while (i < max) {
                 i ++;
                 interpret(expr.body);
@@ -214,7 +214,7 @@ function interpreter(trees, penvironment=null) {
             } break;
 
             case 3: {
-              var variableName = expr.params[0].name;
+              let variableName = expr.params[0].name;
               let endValue = interpret(expr.params[1]);
               let incrementer = interpret(expr.params[2])
 
