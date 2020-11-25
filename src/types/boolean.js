@@ -1,0 +1,1 @@
+// todo: make this extend a nativetype (in classes.js)
