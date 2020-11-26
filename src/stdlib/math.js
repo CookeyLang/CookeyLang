@@ -17,6 +17,18 @@ let nativeclss = new ClassCallable("Math", {
     return Math.tan(args[0]);
   }, false),
 
+  "csc": new NativeCallable(1, ["ang"], new Environment(), args => {
+    return 1 / Math.sin(args[0]);
+  }, false),
+
+  "sec": new NativeCallable(1, ["ang"], new Environment(), args => {
+    return 1 / Math.cos(args[0]);
+  }, false),
+
+  "cot": new NativeCallable(1, ["ang"], new Environment(), args => {
+    return 1 / Math.tan(args[0]);
+  }, false),
+
   "asin": new NativeCallable(1, ["ang"], new Environment(), args => {
     return Math.asin(args[0]);
   }, false),

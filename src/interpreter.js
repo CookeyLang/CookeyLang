@@ -340,6 +340,7 @@ function interpreter(trees, penvironment=null) {
       
       case "postfix": {
         let varVal = environment.getVal(expr.line, expr.name);
+        let ret = varVal;
 
         checkType(expr.line, "Only variables of type number.", varVal, "number");
 
@@ -354,7 +355,7 @@ function interpreter(trees, penvironment=null) {
         }
 
         environment.assign(expr.line, expr.name, varVal);
-        return varVal;
+        return ret;
       }
       
       case "assign": {
