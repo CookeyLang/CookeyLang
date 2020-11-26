@@ -8,11 +8,11 @@ let nativeclss = new ClassCallable("Process", {
   "construct": new NativeCallable(0, [], new Environment(), () => {}, true),
   
   "spawn": new NativeCallable(1, ["cmd"], new Environment(), args => {
-    return spawnSync(args[0]).output;
+    spawnSync(args[0]).output;
   }, false),
 
   "exec": new NativeCallable(1, ["cmd"], new Environment(), args => {
-    return execSync(args[0]);
+    return execSync(args[0]).toString();
   }, false),
 }, null, null);
 
