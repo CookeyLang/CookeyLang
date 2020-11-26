@@ -41,11 +41,11 @@ let nativeclss = new ClassCallable("Math", {
     return Math.pow(args[0], args[1]);
   }, false),
 
-  "log": new NativeCallable(2, ["num"], new Environment(), args => {
+  "log": new NativeCallable(1, ["num"], new Environment(), args => {
     return Math.log10(args[0])
   }, false),
 
-  "ln": new NativeCallable(2, ["num"], new Environment(), args => {
+  "ln": new NativeCallable(1, ["num"], new Environment(), args => {
     return Math.log(args[0]);
   }, false),
 
@@ -92,11 +92,11 @@ let nativeclss = new ClassCallable("Math", {
     return factorial(args[0])
   }, false),
 
-  "random": new NativeCallable(1, [], new Environment(), () => {
+  "random": new NativeCallable(0, [], new Environment(), () => {
     return Math.random();
   }, false),
 
-  "randomRange": new NativeCallable(1, ["min", "max"], new Environment(), args => {
+  "randomRange": new NativeCallable(2, ["min", "max"], new Environment(), args => {
     return Math.random() * (args[1] - args[0]) + args[0];
   }, false),
 
