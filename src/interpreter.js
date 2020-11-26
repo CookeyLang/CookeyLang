@@ -416,7 +416,7 @@ function interpreter(trees, penvironment=null) {
         let value = interpret(expr.num);
         checkType(expr.line, "Exit code can only be of type number.", value, "number");
         process.exit(value);
-      } break;
+      }
 
 
       // Grouping
@@ -429,7 +429,7 @@ function interpreter(trees, penvironment=null) {
         checkType(expr.line, "Absolute value expression must return a number", value, "number");
 
         return Math.abs(value);
-      } break;
+      }
       
       case "literal":
         return expr.value;
@@ -527,7 +527,6 @@ function interpreter(trees, penvironment=null) {
     }
   }
 
-  // let output = interpret(tree);
   let output = null;
 
   resolver(trees);
