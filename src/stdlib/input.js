@@ -9,7 +9,7 @@ let nativeclss = new ClassCallable("Input", {
     environment.getVal(0, "this").fields.nativerl = readline.createInterface({
       input: process.stdin,
       output: process.stdout
-    })
+    });
   }, false),
 
   "prompt": new NativeCallable(2, ["text", "function"], new Environment(), (args, environment) => {
@@ -17,7 +17,7 @@ let nativeclss = new ClassCallable("Input", {
       if (args[1] instanceof FuncCallable) {
         args[1].call([ans])
       }
-    })
+    });
   }, false),
 
   "close": new NativeCallable(0, [], new Environment(), (_, environment) => {

@@ -49,10 +49,10 @@ class UserCallable extends FuncCallable {
 
       try {
         interpretBlock(decl.body, environment);
-        if (isConstruct) return environment.getVal(0, "this")
+        if (isConstruct) return environment.getVal(0, "this");
       } catch (e) {
         if (e.name != "return") {
-          error(decl.line, "Too much recursion.")
+          error(decl.line, "Too much recursion.");
         }
 
         return e.message;
