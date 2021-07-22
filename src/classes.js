@@ -35,7 +35,7 @@ class ClassCallable extends FuncCallable {
       return this.superclass.findMethod(name);
     }
 
-    return null;
+    return;
   }
 
   toString() {
